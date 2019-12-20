@@ -4,8 +4,10 @@
 #
 #    pip-compile --output-file=extra/requirements/watermelon.inboxen.org.txt extra/requirements/watermelon.inboxen.org.in
 #
+-e git+https://github.com/moggers87/django-cursor-pagination.git@af94134832daeb355c45d784ec26497386d72b07#egg=django_cursor_pagination  # via -r extra/requirements/../../inboxen/data/requirements.in, inboxen
 -e file:.#egg=inboxen     # via -r extra/requirements/../../inboxen/data/requirements.in
 amqp==2.6.1               # via kombu
+asgiref==3.2.10           # via django
 babel==2.8.0              # via django-phonenumber-field
 billiard==3.6.3.0         # via celery
 cachetools==4.1.1         # via premailer
@@ -19,7 +21,6 @@ django-annoying==0.10.6   # via inboxen
 django-bootstrap-form==3.4  # via inboxen
 django-celery-results==1.2.1  # via inboxen
 django-csp==3.6           # via inboxen
-django-cursor-pagination==0.1.4  # via inboxen
 django-elevate==1.0.1     # via inboxen
 django-extensions==3.0.4  # via inboxen
 django-formtools==2.2     # via django-two-factor-auth
@@ -29,7 +30,7 @@ django-otp==0.9.4         # via django-two-factor-auth, inboxen
 django-phonenumber-field==3.0.1  # via django-two-factor-auth
 django-sendfile2==0.6.0   # via inboxen
 django-two-factor-auth==1.12.1  # via inboxen
-django==2.2.15            # via django-annoying, django-bootstrap-form, django-csp, django-formtools, django-mptt, django-otp, django-phonenumber-field, django-sendfile2, django-two-factor-auth, inboxen
+django==3.1               # via django-annoying, django-bootstrap-form, django-csp, django-formtools, django-mptt, django-otp, django-phonenumber-field, django-sendfile2, django-two-factor-auth, inboxen
 dnspython==2.0.0          # via salmon-mail
 docutils==0.16            # via python-daemon
 factory-boy==2.12.0       # via inboxen

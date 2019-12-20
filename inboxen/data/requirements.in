@@ -1,2 +1,3 @@
 -e file:.#egg=inboxen
+-e git+https://github.com/moggers87/django-cursor-pagination.git@af94134832daeb355c45d784ec26497386d72b07#egg=django_cursor_pagination
 pip-tools
